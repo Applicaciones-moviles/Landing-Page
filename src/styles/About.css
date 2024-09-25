@@ -1,0 +1,90 @@
+.about-section {
+  background-color: #5E8CFF; /* Fondo azul */
+  padding: 4rem 2rem;
+  color: #ffffff;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Espacio entre el título y el texto */
+  margin-bottom: 3rem;
+  flex-wrap: wrap; /* Asegura que el contenido no se salga del contenedor */
+}
+
+.about-title {
+  flex: 1;
+  font-size: 3rem; /* Tamaño grande para el título */
+  font-weight: bold;
+  text-align: left; /* Alineado a la izquierda */
+  margin-right: 2rem; /* Espacio a la derecha del título */
+}
+
+.about-text {
+  flex: 1;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* Cambia la dirección de los elementos a columna */
+    text-align: center; /* Centra los elementos para mejor estética */
+  }
+
+  .about-title {
+    margin-right: 0; /* Elimina el margen derecho en pantallas pequeñas */
+    margin-bottom: 2rem; /* Añade espacio inferior */
+    text-align: center; /* Centra el título en pantallas pequeñas */
+  }
+
+  .about-text {
+    text-align: center; /* Centra el texto en pantallas pequeñas */
+  }
+}
+
+.commitment-container {
+  text-align: center; /* Centrar el texto para "Nuestro Compromiso" */
+  background-color: #1D1E2C;
+}
+
+.commitment-container h3 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.commitment-cards {
+  display: flex;
+  justify-content: space-around; /* Espacio uniforme entre las tarjetas */
+  flex-wrap: wrap; /* Permite que las tarjetas se alineen en varias filas */
+}
+
+.commitment-card {
+  background-color: #FF6F61; /* Fondo rojo claro */
+  color: #ffffff;
+  width: 250px;
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.commitment-card img {
+  max-width: 100%; /* Imagen responsiva */
+  height: auto;
+  margin-bottom: 1rem; /* Espacio entre la imagen y el texto */
+}
+
+.commitment-card h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.commitment-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}

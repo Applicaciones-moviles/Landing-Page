@@ -1,0 +1,64 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5E8CFF;
+  padding: 1rem 2rem;
+  flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente fila si no hay espacio */
+}
+
+.navbar-logo {
+  color: #1d1e2c;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-toggle {
+  display: none; /* No se muestra el botón por defecto */
+}
+
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.navbar-menu a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.navbar-login {
+  color: #ffd700;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none; /* Oculta el menú por defecto en móviles */
+    flex-direction: column; /* Cuando se muestre, las opciones estarán en columna */
+    width: 100%; /* Ocupará todo el ancho disponible */
+    text-align: center; /* Centra los elementos del menú */
+    gap: 0; /* Elimina el espacio entre elementos */
+    margin-top: 1rem;
+  }
+
+  /* Estilos para el menú visible tras hacer clic en el ícono de hamburguesa */
+  .navbar-menu.active {
+    display: flex; /* Muestra el menú cuando esté activo */
+  }
+
+  .navbar-login {
+    margin-top: 1rem; /* Desplaza el botón de login si es necesario */
+  }
+
+  /* Ícono de menú hamburguesa */
+  .navbar-toggle {
+    display: block; /* Mostrar el botón hamburguesa en pantallas pequeñas */
+    font-size: 1.8rem;
+    color: #ffffff;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,99 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+  background-color: #1D1E2C;
+  color: #ffffff;
+  overflow: hidden; /* Asegura que los elementos se mantengan dentro */
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-button {
+  background-color: #ff5c5c;
+  color: #ffffff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hero-image {
+  max-width: 40%;
+  width: 100%; /* Asegura que ocupe el 100% del contenedor */
+  height: auto;
+  object-fit: contain; /* Asegura que la imagen se ajuste sin salirse */
+  overflow: hidden; /* Previene cualquier desbordamiento inesperado */
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center; /* Centra el contenido */
+    padding: 1rem 2rem; /* Reduce el padding */
+  }
+
+  .hero-content {
+    max-width: 100%; /* Asegura que el contenido ocupe todo el ancho */
+    margin-bottom: 1.5rem; /* Añade espacio entre el contenido y la imagen */
+  }
+
+  .hero-content h1 {
+    font-size: 2rem; /* Ajusta el tamaño del título en móviles */
+  }
+
+  .hero-content p {
+    font-size: 1rem; /* Reduce el tamaño del párrafo en móviles */
+  }
+
+  .hero-button {
+    padding: 0.7rem 1.2rem; /* Ajusta el tamaño del botón */
+    font-size: 0.9rem;
+  }
+
+  .hero-image {
+    max-width: 80%; /* Ajusta el tamaño de la imagen */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: contain; /* Asegura que la imagen no se deforme */
+    margin-bottom: 1rem; /* Espacio debajo de la imagen */
+  }
+}
+
+/* Para pantallas aún más pequeñas (como móviles muy pequeños) */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.8rem; /* Reduce el título aún más en móviles pequeños */
+  }
+
+  .hero-content p {
+    font-size: 0.9rem; /* Reduce el tamaño del párrafo */
+  }
+
+  .hero-button {
+    padding: 0.6rem 1rem; /* Ajusta el tamaño del botón */
+    font-size: 0.8rem;
+  }
+
+  .hero-image {
+    max-width: 90%; /* Ajusta el tamaño de la imagen para pantallas más pequeñas */
+    width: 100%; /* La imagen siempre debe ocupar todo el ancho disponible */
+    height: auto;
+    object-fit: contain; /* Asegura que la imagen no se deforme ni salga del contenedor */
+  }
+}
