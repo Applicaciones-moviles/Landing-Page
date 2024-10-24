@@ -1,0 +1,46 @@
+.about-product-section {
+    padding: 4rem 2rem;
+    background-color: #5E8CFF;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .about-images-container {
+    display: flex;
+    justify-content: space-between; /* Distribuye las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes cambien de fila si no hay espacio */
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .about-image {
+    width: 18%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Para pantallas más pequeñas, mostramos menos imágenes */
+  @media (max-width: 1200px) {
+    .about-image {
+      width: 23%; /* Reduce el tamaño de las imágenes */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .about-image {
+      width: 30%; /* Se ven 3 imágenes por fila */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-image {
+      width: 45%; /* Se ven 2 imágenes por fila */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .about-image {
+      width: 100%; /* Se ve solo 1 imagen por fila */
+    }
+  }
+  
