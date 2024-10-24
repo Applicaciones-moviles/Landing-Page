@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles/HeroSection.css' // Si estás usando CSS puro
-import heroimage from '../assets/heroimage.png'; // Ajusta la extensión si es diferente
+import '../styles/HeroSection.css' 
+import heroimage from '../assets/heroimage.png';
 
 
 const HeroSection = () => {
